@@ -13,7 +13,12 @@ function App() {
           className="btn-nav"
           onClick={() => setPantalla(pantalla === 'venta' ? 'admin' : 'venta')}
         >
-          {pantalla === 'venta' ? '⚙️ Admin' : '🛒 Ventas'}
+
+          {pantalla === 'venta' 
+            ? <><span className="material-icons">hardware</span> Admin</> 
+            : <><span className="material-icons">storefront</span> Ventas</>}
+
+
         </button>
       </header>
       <main className="main">

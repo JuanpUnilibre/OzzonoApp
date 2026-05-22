@@ -67,8 +67,8 @@ export default function PantallaVenta() {
   const imagenes = {
   'Águila Litro': '/productos/aguila-litro.png',
   'Águila Personal': '/productos/aguila-personal.png',
+  'Bacana Lata': '/productos/bacana-lata.png',
   'Costeña Roja': '/productos/costena-roja.png',
-  'Costeñita Lata': '/productos/costenita-lata.png',
   'Hielo': '/productos/hielo.png',
   'Nequi': '/productos/nequi.png',
   }
@@ -97,7 +97,7 @@ export default function PantallaVenta() {
           <p className="categoria-label">Hielo</p>
           <div className="grid-productos grid-1">
             <div className="card-producto card-wide" onClick={() => setSeleccionado(hielo)}>
-              <img src={imagenes[p.nombre]} alt={p.nombre} className="producto-img" />
+              <img src={imagenes[hielo.nombre]} alt={hielo.nombre} className="producto-img" />
               <span className="producto-nombre">{hielo.nombre}</span>
               <span className="producto-precio">${hielo.precio.toLocaleString()} c/u</span>
             </div>
@@ -110,7 +110,7 @@ export default function PantallaVenta() {
           <p className="categoria-label">Nequi</p>
           <div className="grid-productos grid-1">
             <div className="card-producto card-wide" onClick={() => setSeleccionado(nequi)}>
-              <img src={imagenes[p.nombre]} alt={p.nombre} className="producto-img" />
+              <img src={imagenes[nequi.nombre]} alt={nequi.nombre} className="producto-img" />
               <span className="producto-nombre">{nequi.nombre}</span>
               <span className="producto-precio">Comisión variable</span>
             </div>
